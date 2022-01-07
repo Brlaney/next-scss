@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
 import { title, keywords, description } from '@/lib/seo';
+import Navbar from './Navbar';
 
 interface Props {
   // any props that come into the component
@@ -17,6 +18,7 @@ const Layout: FC<Props> = ({ children, ...props }) => {
         <link rel='icon' type='image/png' href='/portfolio-favicon.svg' />
         <title>{title}</title>
       </Head>
+      <Navbar />
       <div className='container'>
         {children}
       </div>
