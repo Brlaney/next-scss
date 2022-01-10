@@ -1,0 +1,10 @@
+@import '../variables'; // variables & functions
+
+.reelsContainer {
+    margin-top: 25px;
+    width: 80%;
+    height: 120px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    background-color: $white;
+}

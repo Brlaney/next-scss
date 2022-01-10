@@ -16,7 +16,7 @@ const Layout: FC<Props> = ({ children, ...props }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
-        <link rel='icon' type='image/png' href='/portfolio-favicon.svg' />
+        <link rel='icon' type='image/png' href='/favicon.png' />
         <title>{title}</title>
       </Head>
       <Navbar />

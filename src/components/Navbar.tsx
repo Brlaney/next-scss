@@ -4,6 +4,7 @@ import MessagesIcon from './nav-icons/MessagesIcon';
 import NewPostIcon from './nav-icons/NewPostIcon';
 import ExploreIcon from './nav-icons/ExploreIcon';
 import ActivityIcon from './nav-icons/ActivityIcon';
+import Image from 'next/image';
 import styles from '@/styles/components/Navbar.module.scss';
 
 const Navbar = () => {
@@ -11,9 +12,14 @@ const Navbar = () => {
     <nav className='uk-navbar-container' uk-navbar>
       <div className={styles.navbar}>
         <div className={styles.col1}>
-          <h2 className={styles.brand}>
-            Instagram
-          </h2>
+          <Image
+            id={styles.brand}
+            className={styles.brand}
+            layout='intrinsic' 
+            src='/brand.png'
+            width={103} 
+            height={34.6}
+          />
         </div>
         <div className={styles.col2}>
           <input
