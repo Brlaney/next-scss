@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import Head from 'next/head';
 import { title, keywords, description } from '@/lib/seo';
 import Navbar from './Navbar';
+import styles from '@/styles/components/Layout.module.scss';
 
 interface Props {
   // any props that come into the component
@@ -19,8 +20,10 @@ const Layout: FC<Props> = ({ children, ...props }) => {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div className='container'>
-        {children}
+      <div className={styles.container}>
+        <main className={styles.main}>
+          {children}
+        </main>
       </div>
     </>
   )
