@@ -1,0 +1,46 @@
+@import '../variables'; // variables & functions
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  color: $c-dark;
+  height: 60px;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  background-color: $white;
+  border-bottom: 1px solid #DBDBDB;
+  .col1 {
+    width: 333.5px;
+    height: 36px;
+    .brand {
+      font-size: 28px;
+    }
+  }
+  .col2 {
+    width: 268px;
+    height: 36px;
+    #searchbar {
+      width: 100%;
+      color: #8E8E8E;
+      border-radius: 8px;
+      background-color: #EFEFEF;
+      border: none;
+    }
+  }
+  .col3 {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    width: 333.5px;
+    height: 24px;
+    .home {
+      padding-left: 24px;
+    }
+    .icons {
+      margin-left: 22px;
+    }
+  }
+}

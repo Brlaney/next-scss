@@ -1,6 +1,35 @@
 @import 'variables'; // variables & functions
-@import 'base'; // base & layout
-// colors
-@import 'components/layout'; // components (button, card, navbar etc)
-@import 'components/navbar'; // components (button, card, navbar etc)
-// utilities (margin, padding, opacity, etc)
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: $primary-font;
+    background-color: $white;
+  }
+  
+  a { text-decoration: none; }
+  
+  * {
+    box-sizing: border-box;
+    font-family: $primary-font;
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
